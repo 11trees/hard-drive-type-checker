@@ -1,0 +1,35 @@
+name: CI & Auto Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+    environment: PROD
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Copy certificate files to workspace
+        run: |
+          mkdir -p certs
+          cp ~/.secrets/certs/fullchain.pem certs/
+          cp ~/.secrets/certs/privkey.pem certs/
+
+      - name: Generate .env file
+        run: echo "VITE_GA4_MEASUREMENT_ID=${{ secrets.VITE_GA4_MEASUREMENT_ID }}" >> .env
+          
+      - name: Build Docker image
+        run: docker compose build
+
+      - name: Stop and remove any existing containers
+        run: docker compose down --remove-orphans
+
+      - name: Run latest container
+        run: docker compose up -d --remove-orphans --force-recreate
+
+      - name: Prune unused images
+        run: docker image prune -f

@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  hard-drive-query-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+      args:
+        VITE_GA4_MEASUREMENT_ID: ${VITE_GA4_MEASUREMENT_ID:-G-XXXXXXXXXX}
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: pnpm run dev --host 0.0.0.0
+    networks:
+      - dev-network
+
+networks:
+  dev-network:
+    driver: bridge

@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  hard-drive-query:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_GA4_MEASUREMENT_ID: ${VITE_GA4_MEASUREMENT_ID:-G-XXXXXXXXXX}
+    ports:
+      - "443:443"
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://harddrive-checker.com/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - app-network
+    volumes:
+      - ./certs:/etc/nginx/certs:ro
+      # - /etc/letsencrypt/options-ssl-nginx.conf:/etc/nginx/options-ssl-nginx.conf:ro
+      # - /etc/letsencrypt/ssl-dhparams.pem:/etc/nginx/ssl-dhparams.pem:ro
+
+networks:
+  app-network:
+    driver: bridge
+
+# Optional: Add volume for logs if needed
+# volumes:
+#   nginx-logs:
