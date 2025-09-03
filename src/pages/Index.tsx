@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { HardDrive } from '@/data/type';
-import { searchHardDrives } from '@/data/hardDriveDatabase';
+import { searchHardDrives } from '@/data/harddriveDatabase';
 import SearchForm from '@/components/SearchForm';
 import DriveResult from '@/components/DriveResult';
 import TechExplanation from '@/components/TechExplanation';
