@@ -6,7 +6,7 @@ import { toshibaHardDrives} from './toshiba';
 import { hgstHardDrives } from './HGST';
 
 
-export const hardDriveDatabase = [
+export const harddriveDatabase = [
   ...wdHardDrives,
   ...seagateHardDrives,
   ...samsungHardDrives,
@@ -19,7 +19,7 @@ export const searchHardDrives = (query: string): HardDrive[] => {
   if (!query.trim()) return [];
   
   const searchTerm = query.toLowerCase();
-  return hardDriveDatabase.filter(drive => 
+  return harddriveDatabase.filter(drive => 
     drive.brand.toLowerCase().includes(searchTerm) ||
     drive.model.toLowerCase().includes(searchTerm) ||
     drive.series?.toLowerCase().includes(searchTerm) ||
@@ -30,13 +30,13 @@ export const searchHardDrives = (query: string): HardDrive[] => {
 };
 
 export const getAllBrands = (): string[] => {
-  return Array.from(new Set(hardDriveDatabase.map(drive => drive.brand))).sort();
+  return Array.from(new Set(harddriveDatabase.map(drive => drive.brand))).sort();
 };
 
 export const getAllSeries = (): string[] => {
-  return Array.from(new Set(hardDriveDatabase.map(drive => drive.series).filter(Boolean))).sort();
+  return Array.from(new Set(harddriveDatabase.map(drive => drive.series).filter(Boolean))).sort();
 };
 
 export const getAllTechnologies = (): string[] => {
-  return Array.from(new Set(hardDriveDatabase.map(drive => drive.technology))).sort();
+  return Array.from(new Set(harddriveDatabase.map(drive => drive.technology))).sort();
 };
