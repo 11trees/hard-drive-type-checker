@@ -15,4 +15,5 @@ export interface HardDrive {
   performance?: string;
   price?: string;
   notes?: string;
+  MTBF?: string;
 }
