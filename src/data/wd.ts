@@ -1,0 +1,33 @@
+import { HardDrive } from './type';
+
+export const wdHardDrives: HardDrive[] = [
+  // Western Digital Blue Series
+  { id: 'wd1', brand: 'Western Digital', model: 'WD10EZEX', capacity: '1TB', rpm: 7200, cache: '64MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Blue', formFactor: '3.5"', targetUse: 'General computing, cold storage, occasional usage', performance: '147-180 MB/s sustained transfer', price: '$49.09' },
+  { id: 'wd2', brand: 'Western Digital', model: 'WD20EZAZ', capacity: '2TB', rpm: 5400, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'SMR', series: 'Blue', formFactor: '3.5"', targetUse: 'General computing, cold storage, occasional usage', performance: '147-180 MB/s sustained transfer' },
+  { id: 'wd3', brand: 'Western Digital', model: 'WD40EZAZ', capacity: '4TB', rpm: 5400, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'SMR', series: 'Blue', formFactor: '3.5"', targetUse: 'General computing, cold storage, occasional usage', performance: '147-180 MB/s sustained transfer' },
+  { id: 'wd4', brand: 'Western Digital', model: 'WD60EZAZ', capacity: '6TB', rpm: 5400, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'SMR', series: 'Blue', formFactor: '3.5"', targetUse: 'General computing, cold storage, occasional usage', performance: '147-180 MB/s sustained transfer', price: '$249' },
+
+  // Western Digital Black Series
+  { id: 'wd5', brand: 'Western Digital', model: 'WD1003FZEX', capacity: '1TB', rpm: 7200, cache: '64MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Black', formFactor: '3.5"', targetUse: 'Gaming, workstations, demanding applications', performance: '202-227 MB/s sustained transfer', price: '$49.09' },
+  { id: 'wd6', brand: 'Western Digital', model: 'WD2003FZEX', capacity: '2TB', rpm: 7200, cache: '64MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Black', formFactor: '3.5"', targetUse: 'Gaming, workstations, demanding applications', performance: '202-227 MB/s sustained transfer' },
+  { id: 'wd7', brand: 'Western Digital', model: 'WD4005FZBX', capacity: '4TB', rpm: 7200, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Black', formFactor: '3.5"', targetUse: 'Gaming, workstations, demanding applications', performance: '202-227 MB/s sustained transfer' },
+  { id: 'wd8', brand: 'Western Digital', model: 'WD6003FZBX', capacity: '6TB', rpm: 7200, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Black', formFactor: '3.5"', targetUse: 'Gaming, workstations, demanding applications', performance: '202-227 MB/s sustained transfer' },
+  { id: 'wd9', brand: 'Western Digital', model: 'WD101FZBX', capacity: '10TB', rpm: 7200, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Black', formFactor: '3.5"', targetUse: 'Gaming, workstations, demanding applications', performance: '202-227 MB/s sustained transfer', price: '$273.87' },
+
+  // Western Digital Red Series
+  { id: 'wd10', brand: 'Western Digital', model: 'WD10EFRX', capacity: '1TB', rpm: 5400, cache: '64MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Red', formFactor: '3.5"', targetUse: 'File sharing, NAS devices, RAID configurations', performance: '150-210 MB/s sustained transfer', price: '$49.99' },
+  { id: 'wd11', brand: 'Western Digital', model: 'WD20EFAX', capacity: '2TB', rpm: 5400, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'SMR', series: 'Red', formFactor: '3.5"', targetUse: 'File sharing, NAS devices, RAID configurations', performance: '150-210 MB/s sustained transfer' },
+  { id: 'wd12', brand: 'Western Digital', model: 'WD40EFAX', capacity: '4TB', rpm: 5400, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'SMR', series: 'Red', formFactor: '3.5"', targetUse: 'File sharing, NAS devices, RAID configurations', performance: '150-210 MB/s sustained transfer' },
+  { id: 'wd13', brand: 'Western Digital', model: 'WD140EFFX', capacity: '14TB', rpm: 7200, cache: '512MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Red', formFactor: '3.5"', targetUse: 'File sharing, NAS devices, RAID configurations', performance: '150-210 MB/s sustained transfer', price: '$257.88' },
+
+  // Western Digital Gold Series
+  { id: 'wd14', brand: 'Western Digital', model: 'WD1005FBYZ', capacity: '1TB', rpm: 7200, cache: '128MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Gold', formFactor: '3.5"', targetUse: 'Enterprise environments, 24/7 operation', performance: '255+ MB/s sustained transfer', workloadRating: '550TB/year', warranty: '5 years', price: '$79.99' },
+  { id: 'wd15', brand: 'Western Digital', model: 'WD4003FRYZ', capacity: '4TB', rpm: 7200, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Gold', formFactor: '3.5"', targetUse: 'Enterprise environments, 24/7 operation', performance: '255+ MB/s sustained transfer', workloadRating: '550TB/year', warranty: '5 years' },
+  { id: 'wd16', brand: 'Western Digital', model: 'WD101KRYZ', capacity: '10TB', rpm: 7200, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Gold', formFactor: '3.5"', targetUse: 'Enterprise environments, 24/7 operation', performance: '255+ MB/s sustained transfer', workloadRating: '550TB/year', warranty: '5 years' },
+  { id: 'wd17', brand: 'Western Digital', model: 'WD201KRYZ', capacity: '20TB', rpm: 7200, cache: '512MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Gold', formFactor: '3.5"', targetUse: 'Enterprise environments, 24/7 operation', performance: '255+ MB/s sustained transfer', workloadRating: '550TB/year', warranty: '5 years', price: '$976.00' },
+
+  // Western Digital Purple Series
+  { id: 'wd18', brand: 'Western Digital', model: 'WD10PURZ', capacity: '1TB', rpm: 5400, cache: '64MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Purple', formFactor: '3.5"', targetUse: '24/7 video recording, CCTV, security systems', performance: '110-145 MB/s sustained transfer', price: '$46.99' },
+  { id: 'wd19', brand: 'Western Digital', model: 'WD40PURZ', capacity: '4TB', rpm: 5400, cache: '64MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Purple', formFactor: '3.5"', targetUse: '24/7 video recording, CCTV, security systems', performance: '110-145 MB/s sustained transfer' },
+  { id: 'wd20', brand: 'Western Digital', model: 'WD101PURP', capacity: '10TB', rpm: 7200, cache: '256MB', interface: 'SATA 6Gb/s', technology: 'CMR', series: 'Purple', formFactor: '3.5"', targetUse: '24/7 video recording, CCTV, security systems', performance: '110-145 MB/s sustained transfer', price: '$300' },
+];
