@@ -11,12 +11,8 @@ export default function FeedbackButton() {
   const handleFeedbackClick = () => {
     // Track feedback click event
     trackFeedbackClick();
-    
-    const subject = encodeURIComponent(t('feedback.email.subject'));
-    const body = encodeURIComponent(t('feedback.email.body'));
-    const mailtoLink = `mailto:sfijd@qq.com?subject=${subject}&body=${body}`;
-    
-    window.location.href = mailtoLink;
+    // Redirect to GitHub repo
+    window.open('https://github.com/11trees/hard-drive-type-checker', '_blank');
   };
 
   return (
