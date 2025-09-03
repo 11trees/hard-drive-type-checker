@@ -126,6 +126,9 @@ const translations: Record<Language, Record<string, string>> = {
     'language.english': 'English',
     
     // Feedback
+    'feedback.title': '型号有误？欢迎去 GitHub 提交 PR!',
+    'feedback.description': '以上数据取自一些总结帖子，未经证实，请下单前找客服确认。如数据有误，还请帮忙提个issue或者PR，感谢。',
+    'feedback.button': 'Github Repo',
     'feedback.submitPR': '型号有误？欢迎去 GitHub 提交 PR!'
   },
   en: {
@@ -205,6 +208,8 @@ const translations: Record<Language, Record<string, string>> = {
     'language.english': 'English',
     
     // Feedback
-    'feedback.submitPR': 'Model wrong? Submit a PR on GitHub!'
-  }
+    'feedback.title': 'Wrong model? Feel free to submit a PR on GitHub!',
+    'feedback.description': 'The above data is collected from summary posts and has not been verified. Please confirm with customer service before placing an order. If you find any mistakes, please help us by submitting an issue or PR. Thank you!',
+    'feedback.button': 'GitHub Repo',
+    'feedback.submitPR': 'Wrong model? Feel free to submit a PR on GitHub!'  }
 };
