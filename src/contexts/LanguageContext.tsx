@@ -126,25 +126,7 @@ const translations: Record<Language, Record<string, string>> = {
     'language.english': 'English',
     
     // Feedback
-    'feedback.button': '数据反馈',
-    'feedback.report': '报告问题',
-    'feedback.title': '发现数据问题？',
-    'feedback.description': '如果您发现硬盘信息有误或需要添加新型号，请点击下方按钮发送邮件反馈。',
-    'feedback.email.subject': '硬盘数据反馈',
-    'feedback.email.body': `您好！
-
-我在使用硬盘技术查询工具时发现了以下问题：
-
-硬盘型号：[请填写具体型号]
-问题描述：[请详细描述发现的问题]
-建议修改：[如有建议请填写]
-
-我的联系方式：[可选]
-
-感谢您的时间！
-
----
-此邮件来自硬盘技术查询工具用户反馈`
+    'feedback.submitPR': '型号有误？欢迎去 GitHub 提交 PR!'
   },
   en: {
     // Page titles and headers
@@ -223,24 +205,6 @@ const translations: Record<Language, Record<string, string>> = {
     'language.english': 'English',
     
     // Feedback
-    'feedback.button': 'Data Feedback',
-    'feedback.report': 'Report Issue',
-    'feedback.title': 'Found a Data Issue?',
-    'feedback.description': 'If you found incorrect hard drive information or need to add new models, please click the button below to send email feedback.',
-    'feedback.email.subject': 'Hard Drive Data Feedback',
-    'feedback.email.body': `Hello!
-
-I found the following issue while using the Hard Drive Technology Query Tool:
-
-Hard Drive Model: [Please specify the model]
-Issue Description: [Please describe the issue in detail]
-Suggested Changes: [Optional suggestions]
-
-My Contact Information: [Optional]
-
-Thank you for your time!
-
----
-This email is from Hard Drive Technology Query Tool user feedback`
+    'feedback.submitPR': 'Model wrong? Submit a PR on GitHub!'
   }
 };

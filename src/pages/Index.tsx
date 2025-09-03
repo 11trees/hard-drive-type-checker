@@ -105,16 +105,16 @@ export default function Index() {
           <p className="mt-2">
             {t('footer.feedback')}
           </p>
-          
-          {/* Additional feedback button in footer */}
-          <div className="mt-4">
-            <button
-              onClick={handleFooterFeedbackClick}
-              className="text-blue-600 hover:text-blue-800 underline text-sm"
-            >
-              📧 {t('feedback.report')}
-            </button>
-          </div>
+              
+        {/* Github PR suggestion */}
+        <a
+          href="https://github.com/11trees/hard-drive-type-checker"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 underline text-sm"
+        >
+          {t('feedback.submitPR')}
+        </a>
         </footer>
       </div>
     </div>
